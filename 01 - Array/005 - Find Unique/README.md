@@ -6,7 +6,7 @@ You have been given an integer array/list `ARR` of size `N`, where `N` is equal 
 
 In the given array/list, 'M' numbers are present twice, and one number is present only once.
 
-You need to find and return the number which is unique in the array/list.
+* **`You need to find and return the number which is unique in the array.`**
 
 **Note:** The unique element is always present in the array/list according to the given condition.
 
