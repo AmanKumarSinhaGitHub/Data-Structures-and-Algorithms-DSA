@@ -122,9 +122,9 @@ void explainVector() {
 	// for example, regin() point to the last index memory address and 
 	// if i do increment "itrr++" then it will move in reverse means it will point to the index just before the last index
 	// Vec = {10, 20, 30, 40}
-	//					   ^ (iterator pointing to 40) 
+	//		       ^ (iterator pointing to 40) 
 	// Vec = {10, 20, 30, 40}
-	// 				   ^ (after doing it++ it points to 30)	   
+	// 		   ^ (after doing it++ it points to 30)	   
 
 	// Note : You will never going to use rend() or rbegin()
 
