@@ -61,6 +61,7 @@ void explainMap() {
 
     auto it = mpp.find(3); // Points to the position where key 3 is found
     cout << it->second<<endl; // Output: 1
+    cout << (*it).second<<endl; // Output : 1
 	
     auto it2 = mpp.find(5); // Points to the end of the map since key 5 is not present
 
