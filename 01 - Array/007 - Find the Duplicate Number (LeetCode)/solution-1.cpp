@@ -52,3 +52,24 @@ int main() {
 
     return 0;
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+/*
+To analyze the time and space complexity of the given code:
+
+Time Complexity:
+
+1. The first loop, where the occurrences of each number are stored in the unordered_map `cnt`, iterates through the entire `nums` vector with 'n' elements. This loop has a time complexity of O(n).
+
+2. The second loop, where we iterate through the `cnt` unordered_map to find the duplicate number, has a time complexity of O(m), where 'm' is the number of unique elements in the `nums` vector. In the worst case, 'm' can be equal to 'n', resulting in a time complexity of O(n).
+
+Thus, the overall time complexity of the `findDuplicate` function is O(n).
+
+Space Complexity:
+
+1. The unordered_map `cnt` is used to store the occurrences of each number in the `nums` vector. In the worst case, if all elements in the `nums` vector are unique, the size of `cnt` will be equal to the size of `nums`, resulting in a space complexity of O(n).
+
+2. Apart from the input `nums` vector and the `cnt` unordered_map, there are no other significant data structures used. Therefore, the overall space complexity is O(n).
+*/
