@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Brute Force Approach
+
 class Solution {
 public:
     bool uniqueOccurrences(vector<int>& arr) {
