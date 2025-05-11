@@ -3,14 +3,14 @@
 #include <algorithm>
 using namespace std;
 
-int main()
+string decimalToBinary(int num)
 {
-    int num;
-    cin >> num;
-
+    if (num == 1 || num == 0)
+    {
+        return to_string(num);
+    }
     string remainer = "";
-
-    while (num != 0)
+    while (num > 0)
     {
         remainer = remainer + to_string((num % 2));
         num = num / 2;
@@ -18,7 +18,15 @@ int main()
 
     reverse(remainer.begin(), remainer.end());
 
-    cout << remainer; 
+    return remainer;
+}
+
+int main()
+{
+    int num;
+    cin >> num;
+
+    cout << decimalToBinary(num);
 
     return 0;
 }
